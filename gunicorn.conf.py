@@ -1,1 +1,1 @@
---pythonpath /home/lsujh72/givefree
+--pythonpath /home/intime/intime

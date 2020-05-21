@@ -4,9 +4,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '0l1iemj2lsy5_m!!8h!m7k*l=%w8qxox(t=53g75(6yl8eb0w*'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['34.70.25.184']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -48,20 +48,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'intime.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'mydb',
-#         'USER': 'intime',
-#         'PASSWORD': '12345',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'intime',
+        'USER': 'intime',
+        'PASSWORD': 'utoB5SwW8o',
+        'HOST': '/cloudsql/intime-277807:us-central1:intime',
+        'PORT': '5432',
     }
 }
 
@@ -91,5 +85,5 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'button_test/static/')
+STATIC_ROOT = '/button_test/static/'
 

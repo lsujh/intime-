@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = '0l1iemj2lsy5_m!!8h!m7k*l=%w8qxox(t=53g75(6yl8eb0w*'
+SECRET_KEY = ''
 
 DEBUG = False
 
@@ -52,8 +52,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'intime',
-        'USER': 'intime',
-        'PASSWORD': 'utoB5SwW8o',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': '/cloudsql/intime-277807:us-central1:intime',
         'PORT': '5432',
     }
